@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/register', // Halaman awal adalah register
-      routes: {
-        '/register': (context) => const Register(title: 'Register'), // Halaman register
+      initialRoute: '/login', // Halaman awal adalah register
+      routes: {    
         '/login': (context) => const Login(title: 'Login'), // Halaman login
+        '/register': (context) => const Register(title: 'Register'), // Halaman register
         '/home': (context) => const Homepage(title: 'Home'), // Halaman home
       },
     );
