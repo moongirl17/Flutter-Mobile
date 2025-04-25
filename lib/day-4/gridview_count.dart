@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class GridviewCount extends StatefulWidget {
-  const GridviewCount ({super.key});
+class GridviewCountPage extends StatefulWidget {
+  const GridviewCountPage({super.key});
 
   @override
-  State <GridviewCount> createState() =>  _GridviewCountState();
+  State<GridviewCountPage> createState() => _GridviewCountPageState();
 }
 
-class  _GridviewCountState extends State <GridviewCount> {
+class _GridviewCountPageState extends State<GridviewCountPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GridView Count'),
+        title: const Text('GridView Page'),
       ),
       body: GridView.count(
-        crossAxisCount: 3,
+        crossAxisCount: 4,
         mainAxisSpacing: 8,
         crossAxisSpacing: 8,
         childAspectRatio: 1,
@@ -28,44 +28,55 @@ class  _GridviewCountState extends State <GridviewCount> {
             ),
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.green,
             child: Center(
               child: Text("Menu 2"),
             ),
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.red,
             child: Center(
               child: Text("Menu 3"),
             ),
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.orange,
             child: Center(
               child: Text("Menu 4"),
             ),
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.brown,
             child: Center(
               child: Text("Menu 5"),
             ),
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.purple,
             child: Center(
               child: Text("Menu 6"),
             ),
           ),
+          Container(
+            color: Colors.blue,
+            child: Center(
+              child: Text("Menu 1"),
+            ),
+          ),
+          Container(
+            color: Colors.blue,
+            child: Center(
+              child: Text("Menu 1"),
+            ),
+          ),
           Center(
             child: FilledButton(
-              onPressed:  () {}, 
-              child: Text("data"),
+              onPressed: () {}, 
+              child: Text("data")
             ),
           )
         ],
       ),
     );
-    
   }
 }
